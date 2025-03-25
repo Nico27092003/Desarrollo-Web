@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Nico</title>
+  </head>
+  <body>
+    <!-- el cuerpo del programa -->
+    <h1 class="titulos">BIENVENIDO A MI PRIMER PAGINA WEB!</h1> <!--selector de titulos pasado a css para cada titulo.  -->
+    <p>
+      Un texto es una composicion de signos codificados en un sistema de
+      escritura que forma una unidad de sentido.
+      <br />
+      También es una composición de caracteres imprimibles generados por un
+      algoritmo de cifrado
+      <br />
+      que, aunque no tienen sentido para cualquier persona, sí puede ser
+      descifrado por su destinatario original.
+    </p>
+    <h2 class="titulos">proyeccion de autos a futuro</h2>
+    <ol>
+      <!-- ol es para lista enumerada -->
+      <li>cuatri motomel pitbull 200</li>
+      <li>Dominar 400 Tourer</li>
+      <li>QJ 800 srt</li>
+      <li>KTM 890 adventure R</li>
+      <li>DUCATI multistrada V4</li>
+    </ol>
+    <h2 class="titulos">autos a tener a futuro</h2>
+    <ul>
+      <!-- ul es para lista sin numerar -->
+      <li>volkswagen</li>
+      <li>audi</li>
+      <li>ferrari</li>
+      <li>lamborghini</li>
+      <li>renault</li>
+    </ul>
+    <!-- enlaces absoluto/te manda a un enlace y te saca de nuestra web -->
+ 
+    <a href="https://gcdc.com.ar/">TRABAJO</a> <br />
+
+    <!-- enlaces absoluto/te manda a un enlace y no te saca de nuestra web -->
+    <a target="_blank" href="https://gcdc.com.ar/">TRABAJO</a><br />
+
+    <!-- enlaces relativos/permite moverte atraves de tu sitio web -->
+    <a href="index.html">VOLVER A HOME</a> <br/>
+
+    <!-- videos -->
+    <video src ="video.mp4" controls></video> <br/>
+    <br/>
+
+    <!-- audio -->
+     <audio src="mensaje motivador.mp3" controls></audio> <br/>
+  
+  <!-- tablas para organizar o para armar emails -->
+  <table> <!-- contenedores de la tabla -->
+  </table> <br/>
+  <tr> <!-- definen una fila -->
+<th>Nombre</th> <td>Nicolas</td> <br>
+<th>Ciudad</th> <td>Buenos aires</td> <br>  <!-- los th definen encabezados -->
+<th>Edad</th> <td>21</td> <br> <!-- los td son las celdas a completar -->
+</tr> <br>
+<!-- formularios  -->
+
+<h2 class="titulos">INGRESA TUS DATOS Y NOS PONEMOS EN CONTACTO!</h2>
+<form action="/submit" method="post"> <!-- etiqueta contenedora -->
+<label for="nombre">Nombre:</label>
+<input type="text" name="nombre" id="nombre"> <br/> 
+ <!-- el campo name, tiene que coincidir con el la 
+direccion del action por el tema de los datos y el id con el label -->
+
+<!-- en el input hay varios tipos y es para que quiero ingresar, en este caso texto
+o mas abajo tipo password para que la clave sean asteriscos -->
+<label for="password">Contraseña:</label> 
+<input type="password" name="password" id="password"> <br/>
+
+<label for="mensaje">Mensaje: </label> <br>
+<textarea name="mensaje" id="mensaje"></textarea> <br/>
+
+
+
+
+</form> 
+
+
+
+
+
+
+
+
+
+</body>
+</html>
