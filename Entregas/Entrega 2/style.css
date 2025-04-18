@@ -16,7 +16,7 @@ body {
 }    
 /* Encabezado */
 header {
-    background-color: #007bff;
+    background-color: gray;
     color: white;
     text-align: center;
     padding: 20px;
@@ -81,7 +81,7 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #007bff;
+    background-color: blue;
     color: white;
     text-align: center;
     padding: 15px;
