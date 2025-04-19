@@ -26,47 +26,98 @@
               </div>
             </div>
           </nav>
+          <!-- Sección Números Clave -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Números Clave</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+  
+      <div class="col">
+        <div class="card border-0 shadow-sm py-4">
+          <h3 class="display-6 fw-bold text-primary counter" data-target="100">0</h3>
+          <p class="mb-0">Sucursales en todo el país</p>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card border-0 shadow-sm py-4">
+          <h3 class="display-6 fw-bold text-success counter" data-target="2000">0</h3>
+          <p class="mb-0">Motocicletas vendidas anualmente</p>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card border-0 shadow-sm py-4">
+          <h3 class="display-6 fw-bold text-warning counter" data-target="150">0</h3>
+          <p class="mb-0">Empleados dedicados a ofrecer el mejor servicio</p>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card border-0 shadow-sm py-4">
+          <h3 class="display-6 fw-bold text-danger counter" data-target="30">0</h3>
+          <p class="mb-0">Marcas de motos disponibles</p>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card border-0 shadow-sm py-4">
+          <h3 class="display-6 fw-bold text-info counter" data-target="5">0</h3>
+          <p class="mb-0">Continentes con distribución de productos</p>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card border-0 shadow-sm py-4">
+          <h3 class="display-6 fw-bold text-secondary counter" data-target="50">0</h3>
+          <p class="mb-0">Premios de excelencia en servicio al cliente</p>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card border-0 shadow-sm py-4">
+          <h3 class="display-6 fw-bold text-dark">24/7</h3>
+          <p class="mb-0">Soporte técnico disponible todo el año</p>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card border-0 shadow-sm py-4">
+          <h3 class="display-6 fw-bold text-primary counter" data-target="15">0</h3>
+          <p class="mb-0">Años de experiencia en el mercado</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+      
+        <script>
+            const counters = document.querySelectorAll('.counter');
+            const speed = 50; // velocidad de incremento (ms por paso)
           
-
-        <!-- Sección Números -->
-        <section class="contenido">
-            <h2>Números Clave</h2>
-            <div class="numeros-lista">
-                <div class="numero">
-                    <h3>100+</h3>
-                    <p>Sucursales en todo el país</p>
-                </div>
-                <div class="numero">
-                    <h3>2000+</h3>
-                    <p>Motocicletas vendidas anualmente</p>
-                </div>
-                <div class="numero">
-                    <h3>150+</h3>
-                    <p>Empleados dedicados a ofrecer el mejor servicio</p>
-                </div>
-                <div class="numero">
-                    <h3>30+</h3>
-                    <p>Marcas de motos disponibles</p>
-                </div>
-                <div class="numero">
-                    <h3>5</h3>
-                    <p>Continentes con distribución de productos</p>
-                </div>
-                <div class="numero">
-                    <h3>50+</h3>
-                    <p>Premios de excelencia en servicio al cliente</p>
-                </div>
-                <div class="numero">
-                    <h3>24/7</h3>
-                    <p>Soporte técnico disponible todo el año</p>
-                </div>
-                <div class="numero">
-                    <h3>15</h3>
-                    <p>Años de experiencia en el mercado</p>
-                </div>
-            </div>
-        </section>
-
+            const animate = () => {
+              counters.forEach(counter => {
+                const updateCount = () => {
+                  const target = +counter.getAttribute('data-target');
+                  const count = +counter.innerText;
+          
+                  const increment = Math.ceil(target / speed);
+          
+                  if (count < target) {
+                    counter.innerText = count + increment;
+                    setTimeout(updateCount, 20);
+                  } else {
+                    counter.innerText = target + "+";
+                  }
+                };
+                updateCount();
+              });
+            };
+          
+            // Ejecutar la animación cuando el DOM está listo
+            window.addEventListener('DOMContentLoaded', animate);
+          </script>
         <!-- Footer -->
         <footer class="bg-dark text-white text-center py-3 mt-5">
             &copy; 2025 Soluciones Motorizadas. Todos los derechos reservados.
