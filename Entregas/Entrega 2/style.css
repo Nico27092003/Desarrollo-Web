@@ -1,191 +1,204 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    text-align: center;
-}    
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
 /* Encabezado */
 header {
-    background-color: gray;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+  display: inline;
+  margin-right: 15px;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 /* Galería de imágenes */
 .galeria {
-    text-align: center;
+  text-align: center;
 }
 
 .fotoentrada {
-    width: 45%;
-    border-radius: 5px;
-    margin: 10px;
+  width: 45%;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 /* Secciones generales */
 section {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
 }
 
 h2 {
-    margin-bottom: 10px;
-    color: #007bff;
+  margin-bottom: 10px;
+  color: #007bff;
 }
 
 /* Estilos comunes para listas en la sección "Nosotros", "RRHH" y otras secciones */
 .contenido ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 20px auto;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 20px auto;
 }
 
 .contenido li {
-    background: #ffffff;
-    padding: 10px;
-    font-size: 18px;
-    color: #333;
-    margin: 5px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    margin-top: 20px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: auto;
 }
 
 /* Estilos para la sección Marcas */
 .marcas-lista {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Tres columnas */
-    gap: 20px;
-    justify-items: center;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Tres columnas */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
 }
 
 .marca {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .marca-logo {
-    width: 80%;
-    /* Ajusta el tamaño del logo */
-    margin-bottom: 10px;
+  width: 80%;
+  /* Ajusta el tamaño del logo */
+  margin-bottom: 10px;
 }
 
 .marca p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Estilos para la sección Números */
 .numeros-lista {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Dos columnas */
-    gap: 20px;
-    justify-items: center;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Dos columnas */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
 }
 
 .numero {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .numero h3 {
-    font-size: 30px;
-    color: #007bff;
-    margin-bottom: 10px;
+  font-size: 30px;
+  color: #007bff;
+  margin-bottom: 10px;
 }
 
 .numero p {
-    font-size: 18px;
-    color: #333;
+  font-size: 18px;
+  color: #333;
 }
 
 /* Estilos para la sección Ubicación */
 .mapa img {
-    margin-top: 20px;
-    border-radius: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 /* Estilos para listas en la sección Ubicación */
 ul.lista li {
-    background: #ffffff;
-    padding: 10px;
-    margin: 5px 0;
-    font-size: 16px;
-    color: #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos adicionales comunes */
 h3 {
-    color: #007bff;
-    margin-top: 20px;
+  color: #007bff;
+  margin-top: 20px;
 }
-.container{
-    display: grid;
+.container {
+  display: grid;
 }
-
-
 
 /* Media query para tabletas */
 @media (min-width: 600px) {
-    body {
-        font-size: 18px;
-    }
+  body {
+    font-size: 18px;
+  }
 }
 
 /* Media query para computadoras de escritorio */
 @media (min-width: 1024px) {
-    body {
-        font-size: 20px;
-    }
+  body {
+    font-size: 20px;
+  }
 }
