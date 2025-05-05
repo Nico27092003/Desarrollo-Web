@@ -1,11 +1,26 @@
 /* Reset básico */
-// Al principio del archivo
 $azul-primario: #007bff;
 $color-texto: #333;
 $color-fondo: #f4f4f4;
 $color-blanco: #ffffff;
 $fuente-principal: Arial, sans-serif;
 $sombra: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+// MIXINS
+@mixin tarjeta($padding: 10px, $radius: 5px) {
+  background: $color-blanco;
+  padding: $padding;
+  border-radius: $radius;
+  box-shadow: $sombra;
+  color: $color-texto;
+}
+
+@mixin grid($cols) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
 
 * {
   margin: 0;
@@ -93,14 +108,11 @@ h2 {
 }
 
 .contenido li {
-  background: #ffffff;
-  padding: 10px;
+  @include tarjeta();
   font-size: 18px;
-  color: #333;
   margin: 5px 0;
-  border-radius: 5px;
-  box-shadow: $sombra;
 }
+
 
 /* Footer */
 footer {
