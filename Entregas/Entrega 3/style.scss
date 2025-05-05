@@ -126,13 +126,10 @@ footer {
 
 /* Estilos para la sección Marcas */
 .marcas-lista {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Tres columnas */
-  gap: 20px;
-  justify-items: center;
+  @include grid(3);
   margin-top: 20px;
 }
+
 
 .marca {
   @include tarjeta(15px, 10px);
