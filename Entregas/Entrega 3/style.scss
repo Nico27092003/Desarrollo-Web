@@ -136,19 +136,17 @@ footer {
 .marca {
   @include tarjeta(15px, 10px);
   text-align: center;
-}
 
+  .marca-logo {
+    width: 80%;
+    margin-bottom: 10px;
+  }
 
-.marca-logo {
-  width: 80%;
-  /* Ajusta el tamaño del logo */
-  margin-bottom: 10px;
-}
-
-.marca p {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-texto;
+  }
 }
 
 /* Estilos para la sección Números */
