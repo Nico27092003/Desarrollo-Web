@@ -187,14 +187,11 @@ footer {
 
 /* Estilos para listas en la sección Ubicación */
 ul.lista li {
-  background: #ffffff;
-  padding: 10px;
-  margin: 5px 0;
+  @include tarjeta();
   font-size: 16px;
-  color: #333;
-  border-radius: 5px;
-  box-shadow: $sombra;
+  margin: 5px 0;
 }
+
 
 /* Estilos adicionales comunes */
 h3 {
