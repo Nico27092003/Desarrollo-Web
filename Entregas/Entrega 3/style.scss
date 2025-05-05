@@ -103,17 +103,20 @@ h2 {
 }
 
 /* Estilos comunes para listas en la sección "Nosotros", "RRHH" y otras secciones */
-.contenido ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 20px auto;
+.contenido {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px auto;
+  }
+
+  li {
+    @include tarjeta();
+    font-size: 18px;
+    margin: 5px 0;
+  }
 }
 
-.contenido li {
-  @include tarjeta();
-  font-size: 18px;
-  margin: 5px 0;
-}
 
 
 /* Footer */
