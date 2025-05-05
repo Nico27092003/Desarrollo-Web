@@ -151,13 +151,10 @@ footer {
 
 /* Estilos para la sección Números */
 .numeros-lista {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* Dos columnas */
-  gap: 20px;
-  justify-items: center;
+  @include grid(2);
   margin-top: 20px;
 }
+
 
 .numero {
   @include tarjeta(20px, 10px);
