@@ -61,20 +61,22 @@ main {
   flex: 1;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
 
-nav ul li {
-  display: inline;
-  margin-right: 15px;
-}
+    li {
+      display: inline;
+      margin-right: 15px;
+    }
+  }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
 }
 
 /* Galería de imágenes */
