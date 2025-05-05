@@ -135,12 +135,10 @@ footer {
 }
 
 .marca {
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: $sombra;
+  @include tarjeta(15px, 10px);
   text-align: center;
 }
+
 
 .marca-logo {
   width: 80%;
