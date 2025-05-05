@@ -159,18 +159,17 @@ footer {
 .numero {
   @include tarjeta(20px, 10px);
   text-align: center;
-}
 
+  h3 {
+    font-size: 30px;
+    color: $azul-primario;
+    margin-bottom: 10px;
+  }
 
-.numero h3 {
-  font-size: 30px;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.numero p {
-  font-size: 18px;
-  color: #333;
+  p {
+    font-size: 18px;
+    color: $color-texto;
+  }
 }
 
 /* Estilos para la sección Ubicación */
