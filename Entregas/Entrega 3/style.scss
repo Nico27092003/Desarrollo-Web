@@ -163,12 +163,10 @@ footer {
 }
 
 .numero {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: $sombra;
+  @include tarjeta(20px, 10px);
   text-align: center;
 }
+
 
 .numero h3 {
   font-size: 30px;
