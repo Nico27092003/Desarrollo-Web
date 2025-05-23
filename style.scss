@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Variables */
 $azul-primario: #007bff;
 $color-texto: #333;
 $color-fondo: #f4f4f4;
@@ -6,7 +6,7 @@ $color-blanco: #ffffff;
 $fuente-principal: Arial, sans-serif;
 $sombra: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-// MIXINS
+/* Mixins */
 @mixin tarjeta($padding: 10px, $radius: 5px) {
   background: $color-blanco;
   padding: $padding;
@@ -21,7 +21,6 @@ $sombra: 0 2px 5px rgba(0, 0, 0, 0.1);
   gap: 20px;
   justify-items: center;
 }
-
 * {
   margin: 0;
   padding: 0;
